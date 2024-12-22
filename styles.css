@@ -1,0 +1,68 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;  /* Color de fondo por defecto */
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/16428930/pexels-photo-16428930/free-photo-of-ciudad-punto-de-referencia-edificio-deporte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');  /* Imagen de fondo */
+    background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen en la pantalla */
+  }
+  
+  
+  h1 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px); /* Tablero de 5x5 */
+    gap: 5px;
+    margin: 20px auto;
+    width: max-content;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #bbb;
+  }
+  
+  .cell.clicked {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+  
+  
+  #message {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .cell.treasure {
+    background-image: url('imagenes/messi.jpg');  /* Ícono de tesoro */
+    background-size: cover;  /* Asegura que el ícono cubra toda la celda */
+    background-color: transparent;  /* Elimina el fondo original */
+  }
+  
+  
+                                                                           
